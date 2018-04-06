@@ -1,0 +1,12 @@
+- job:
+    name: BeknoSynchronize
+    description: 'Bekno Synchronize the web!'
+    project-type: freestyle
+    block-downstream: false
+    triggers:
+      - pollscm: '@hourly'
+    builders:
+      - shell: WebsiteScript.Synchronize
+    publishers:
+      - email:
+          recipients: PRabhu@aidvisors.com

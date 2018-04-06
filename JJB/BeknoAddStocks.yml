@@ -1,0 +1,10 @@
+- job:
+    name: BeknoAddStocks
+    description: 'Bekno AddStocks!'
+    project-type: freestyle
+    block-downstream: false
+    builders:
+      - shell: BeknoAddStocks
+    publishers:
+      - email:
+          recipients: Prabhu@aidvisors.com

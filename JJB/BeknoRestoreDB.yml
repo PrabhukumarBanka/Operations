@@ -1,0 +1,10 @@
+- job:
+    name: BeknoRestoreDB
+    description: 'Bekno Restore DB the web!'
+    project-type: freestyle
+    block-downstream: false
+    builders:
+      - shell: BeknoRestoreDB
+    publishers:
+      - email:
+          recipients: Prabhu@aidvisors.com

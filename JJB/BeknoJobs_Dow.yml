@@ -1,0 +1,240 @@
+- job:
+    name: BeknoAAPL
+    description: 'Bekno AAPL Learning!'
+    project-type: freestyle
+    workspace: 'C:\Jenkins\jobs\BeknoExecutionDirectory'
+    block-downstream: false
+    builders:
+      - batch: BeknoResetDBAAPL
+      - batch: BeknoAddStockAAPL
+      - batch: BeknoLearnAAPL
+      - batch: BeknoDumpSelectionsLocally
+      - batch: BeknoRestoreSelectionsLocally
+- job:
+    name: BeknoBA
+    description: 'Bekno BA Learning!'
+    project-type: freestyle
+    workspace: 'C:\Jenkins\jobs\BeknoExecutionDirectory'
+    block-downstream: false
+    builders:
+      - batch: BeknoResetDBBA
+      - batch: BeknoAddStockBA
+      - batch: BeknoLearnBA
+      - batch: BeknoDumpSelectionsLocally
+      - batch: BeknoRestoreSelectionsLocally
+- job:
+    name: BeknoCAT
+    description: 'Bekno CAT Learning!'
+    project-type: freestyle
+    workspace: 'C:\Jenkins\jobs\BeknoExecutionDirectory'
+    block-downstream: false
+    builders:
+      - batch: BeknoResetDBCAT
+      - batch: BeknoAddStockCAT
+      - batch: BeknoLearnCAT
+      - batch: BeknoDumpSelectionsLocally
+      - batch: BeknoRestoreSelectionsLocally
+- job:
+    name: BeknoCVX
+    description: 'Bekno CVX Learning!'
+    project-type: freestyle
+    workspace: 'C:\Jenkins\jobs\BeknoExecutionDirectory'
+    block-downstream: false
+    builders:
+      - batch: BeknoResetDBCVX
+      - batch: BeknoAddStockCVX
+      - batch: BeknoLearnCVX
+      - batch: BeknoDumpSelectionsLocally
+      - batch: BeknoRestoreSelectionsLocally
+- job:
+    name: BeknoCSCO
+    description: 'Bekno CSCO Learning!'
+    project-type: freestyle
+    workspace: 'C:\Jenkins\jobs\BeknoExecutionDirectory'
+    block-downstream: false
+    builders:
+      - batch: BeknoResetDBCSCO
+      - batch: BeknoAddStockCSCO
+      - batch: BeknoLearnCSCO
+      - batch: BeknoDumpSelectionsLocally
+      - batch: BeknoRestoreSelectionsLocally
+- job:
+    name: BeknoKO
+    description: 'Bekno KO Learning!'
+    project-type: freestyle
+    workspace: 'C:\Jenkins\jobs\BeknoExecutionDirectory'
+    block-downstream: false
+    builders:
+      - batch: BeknoResetDBKO
+      - batch: BeknoAddStockKO
+      - batch: BeknoLearnKO
+      - batch: BeknoDumpSelectionsLocally
+      - batch: BeknoRestoreSelectionsLocally
+- job:
+    name: BeknoDIS
+    description: 'Bekno DIS Learning!'
+    project-type: freestyle
+    workspace: 'C:\Jenkins\jobs\BeknoExecutionDirectory'
+    block-downstream: false
+    builders:
+      - batch: BeknoResetDBDIS
+      - batch: BeknoAddStockDIS
+      - batch: BeknoLearnDIS
+      - batch: BeknoDumpSelectionsLocally
+      - batch: BeknoRestoreSelectionsLocally
+- job:
+    name: BeknoDWDP
+    description: 'Bekno DWDP Learning!'
+    project-type: freestyle
+    workspace: 'C:\Jenkins\jobs\BeknoExecutionDirectory'
+    block-downstream: false
+    builders:
+      - batch: BeknoResetDBDWDP
+      - batch: BeknoAddStockDWDP
+      - batch: BeknoLearnDWDP
+      - batch: BeknoDumpSelectionsLocally
+      - batch: BeknoRestoreSelectionsLocally
+- job:
+    name: BeknoGE
+    description: 'Bekno GE Learning!'
+    project-type: freestyle
+    workspace: 'C:\Jenkins\jobs\BeknoExecutionDirectory'
+    block-downstream: false
+    builders:
+      - batch: BeknoResetDBGE
+      - batch: BeknoAddStockGE
+      - batch: BeknoLearnGE
+      - batch: BeknoDumpSelectionsLocally
+      - batch: BeknoRestoreSelectionsLocally
+- job:
+    name: BeknoGS
+    description: 'Bekno GS Learning!'
+    project-type: freestyle
+    workspace: 'C:\Jenkins\jobs\BeknoExecutionDirectory'
+    block-downstream: false
+    builders:
+      - batch: BeknoResetDBGS
+      - batch: BeknoAddStockGS
+      - batch: BeknoLearnGS
+      - batch: BeknoDumpSelectionsLocally
+      - batch: BeknoRestoreSelectionsLocally
+- job:
+    name: BeknoHD
+    description: 'Bekno HD Learning!'
+    project-type: freestyle
+    workspace: 'C:\Jenkins\jobs\BeknoExecutionDirectory'
+    block-downstream: false
+    builders:
+      - batch: BeknoResetDBHD
+      - batch: BeknoAddStockHD
+      - batch: BeknoLearnHD
+      - batch: BeknoDumpSelectionsLocally
+      - batch: BeknoRestoreSelectionsLocally
+- job:
+    name: BeknoINTC
+    description: 'Bekno INTC Learning!'
+    project-type: freestyle
+    workspace: 'C:\Jenkins\jobs\BeknoExecutionDirectory'
+    block-downstream: false
+    builders:
+      - batch: BeknoResetDBINTC
+      - batch: BeknoAddStockINTC
+      - batch: BeknoLearnINTC
+      - batch: BeknoDumpSelectionsLocally
+      - batch: BeknoRestoreSelectionsLocally
+- job:
+    name: BeknoJNJ
+    description: 'Bekno JNJ Learning!'
+    project-type: freestyle
+    workspace: 'C:\Jenkins\jobs\BeknoExecutionDirectory'
+    block-downstream: false
+    builders:
+      - batch: BeknoResetDBJNJ
+      - batch: BeknoAddStockJNJ
+      - batch: BeknoLearnJNJ
+      - batch: BeknoDumpSelectionsLocally
+      - batch: BeknoRestoreSelectionsLocally
+- job:
+    name: BeknoMCD
+    description: 'Bekno MCD Learning!'
+    project-type: freestyle
+    workspace: 'C:\Jenkins\jobs\BeknoExecutionDirectory'
+    block-downstream: false
+    builders:
+      - batch: BeknoResetDBMCD
+      - batch: BeknoAddStockMCD
+      - batch: BeknoLearnMCD
+      - batch: BeknoDumpSelectionsLocally
+      - batch: BeknoRestoreSelectionsLocally
+- job:
+    name: BeknoPFE
+    description: 'Bekno PFE Learning!'
+    project-type: freestyle
+    workspace: 'C:\Jenkins\jobs\BeknoExecutionDirectory'
+    block-downstream: false
+    builders:
+      - batch: BeknoResetDBPFE
+      - batch: BeknoAddStockPFE
+      - batch: BeknoLearnPFE
+      - batch: BeknoDumpSelectionsLocally
+      - batch: BeknoRestoreSelectionsLocally
+- job:
+    name: BeknoTRV
+    description: 'Bekno TRV Learning!'
+    project-type: freestyle
+    workspace: 'C:\Jenkins\jobs\BeknoExecutionDirectory'
+    block-downstream: false
+    builders:
+      - batch: BeknoResetDBTRV
+      - batch: BeknoAddStockTRV
+      - batch: BeknoLearnTRV
+      - batch: BeknoDumpSelectionsLocally
+      - batch: BeknoRestoreSelectionsLocally
+- job:
+    name: BeknoUTX
+    description: 'Bekno UTX Learning!'
+    project-type: freestyle
+    workspace: 'C:\Jenkins\jobs\BeknoExecutionDirectory'
+    block-downstream: false
+    builders:
+      - batch: BeknoResetDBUTX
+      - batch: BeknoAddStockUTX
+      - batch: BeknoLearnUTX
+      - batch: BeknoDumpSelectionsLocally
+      - batch: BeknoRestoreSelectionsLocally
+- job:
+    name: BeknoUNH
+    description: 'Bekno UNH Learning!'
+    project-type: freestyle
+    workspace: 'C:\Jenkins\jobs\BeknoExecutionDirectory'
+    block-downstream: false
+    builders:
+      - batch: BeknoResetDBUNH
+      - batch: BeknoAddStockUNH
+      - batch: BeknoLearnUNH
+      - batch: BeknoDumpSelectionsLocally
+      - batch: BeknoRestoreSelectionsLocally
+- job:
+    name: BeknoVZ
+    description: 'Bekno VZ Learning!'
+    project-type: freestyle
+    workspace: 'C:\Jenkins\jobs\BeknoExecutionDirectory'
+    block-downstream: false
+    builders:
+      - batch: BeknoResetDBVZ
+      - batch: BeknoAddStockVZ
+      - batch: BeknoLearnVZ
+      - batch: BeknoDumpSelectionsLocally
+      - batch: BeknoRestoreSelectionsLocally
+- job:
+    name: BeknoV
+    description: 'Bekno V Learning!'
+    project-type: freestyle
+    workspace: 'C:\Jenkins\jobs\BeknoExecutionDirectory'
+    block-downstream: false
+    builders:
+      - batch: BeknoResetDBV
+      - batch: BeknoAddStockV
+      - batch: BeknoLearnV
+      - batch: BeknoDumpSelectionsLocally
+      - batch: BeknoRestoreSelectionsLocally

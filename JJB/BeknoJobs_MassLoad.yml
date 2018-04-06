@@ -1,0 +1,27 @@
+- job:
+    name: BeknoLearningPhaseOne
+    description: 'Bekno Script for Learning on Phase One Stocks!'
+    project-type: multijob
+    workspace: 'C:\Jenkins\jobs\BeknoExecutionDirectory'
+    builders:
+      - multijob:
+          name: PhaseOne
+          condition: SUCCESSFUL
+          execution-type: SEQUENTIALLY
+          projects:
+            - name: BeknoAAOI
+            - name: BeknoAAP
+            - name: BeknoAAXJ
+            - name: BeknoABBV
+            - name: BeknoABCO
+            - name: BeknoABT
+            - name: BeknoACGL
+            - name: BeknoACWI
+            - name: BeknoADI
+            - name: BeknoAEP
+            - name: BeknoAERI
+            - name: BeknoAFL
+            - name: BeknoAGX
+            - name: BeknoAIG
+            - name: BeknoALK
+

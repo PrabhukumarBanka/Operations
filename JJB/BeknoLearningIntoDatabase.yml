@@ -1,0 +1,10 @@
+- job:
+    name: BeknoInitiateLearning
+    description: 'Bekno Learning!'
+    project-type: freestyle
+    block-downstream: false
+    builders:
+      - shell: BeknoInitiateLearning
+    publishers:
+      - email:
+          recipients: Prabhu@aidvisors.com

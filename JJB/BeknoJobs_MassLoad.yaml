@@ -1,0 +1,10 @@
+-job:
+    name: BeknoAAOI
+    description: 'Bekno AAOI Learning!'
+    project-type: freestyle
+    workspace: 'C:\Jenkins\jobs\BeknoExecutionDirectory'
+    block-downstream: false
+    builders:
+      - batch: BeknoResetDBAAOI
+      - batch: BeknoAddStockAAOI
+      - batch: BeknoLearnAAOI
